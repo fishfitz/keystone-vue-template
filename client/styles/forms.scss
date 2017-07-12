@@ -1,0 +1,21 @@
+@import "./variables.scss";
+
+.delete-top {
+    opacity: 0;
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    transition: opacity $speed $easing;
+}
+
+.media-content {
+    position: relative;
+
+    &:hover .delete-top {
+        opacity: 1;
+    }
+}
+
+a {
+    color: $grey;
+}

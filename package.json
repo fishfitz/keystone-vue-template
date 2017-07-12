@@ -1,0 +1,43 @@
+{
+    "dependencies": {
+        "axios": "^0.16.2",
+        "connect-mongo": "^1.3.2",
+        "keystone": "^4.0.0-beta.5",
+        "vue": "^2.3.4",
+        "vue-awesome": "^2.3.1",
+        "vue-router": "^2.6.0",
+        "vue-server-renderer": "^2.3.4",
+        "vuex": "^2.3.1"
+    },
+    "devDependencies": {
+        "autoprefixer": "^7.1.2",
+        "babel-core": "^6.24.1",
+        "babel-loader": "^7.0.0",
+        "babel-plugin-component": "^0.9.1",
+        "babel-preset-env": "^1.4.0",
+        "bulma": "^0.4.2",
+        "cross-env": "^5.0.1",
+        "css-loader": "^0.28.0",
+        "debounce": "^1.0.2",
+        "eslint": "^3.19.0",
+        "extract-text-webpack-plugin": "^2.1.0",
+        "file-loader": "^0.11.1",
+        "html-webpack-plugin": "^2.28.0",
+        "ignore-loader": "^0.1.2",
+        "node-sass": "^4.5.3",
+        "sass-loader": "^6.0.6",
+        "scss-loader": "^0.0.1",
+        "style-loader": "^0.18.2",
+        "vue-loader": "^12.0.2",
+        "vue-ssr-webpack-plugin": "^3.0.0",
+        "vue-style-loader": "^3.0.1",
+        "vue-template-compiler": "^2.3.0",
+        "webpack": "^2.4.1"
+    },
+    "scripts": {
+        "forever": "forever start -c \"node --harmony\" ./server/index.js",
+        "start": "node --harmony ./server/index.js",
+        "build": "cross-env NODE_ENV=production webpack -p --config build/webpack.config.js",
+        "dev": "webpack --config build/webpack.config.js"
+    }
+}

@@ -1,0 +1,27 @@
+@media (max-width: 768px) {
+    .xs-hide {
+        display: none!important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .sm-hide {
+        display: none!important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .md-hide {
+        display: none!important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .lg-hide {
+        display: none!important;
+    }
+}
+
+[invisible] {
+    visibility: hidden;
+}
